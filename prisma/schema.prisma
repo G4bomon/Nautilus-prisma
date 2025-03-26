@@ -13,4 +13,5 @@ datasource db {
 model Respuestas {
   id         Int     @id @default(autoincrement())
   resultados String
+  embedding  Json?   // Almacenará el array de floats del embedding
 }
